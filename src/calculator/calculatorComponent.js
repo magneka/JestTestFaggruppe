@@ -12,7 +12,9 @@ const CalculatorComponent = () => {
   const [operatorItems] = React.useState([
     { label: "", value: "" },
     { label: "+", value: "+" },
-    { label: "-", value: "-" }
+    { label: "-", value: "-" },
+    { label: "/", value: "/" },
+    { label: "*", value: "*" }
   ]);
 
   const performCalculation = (e) => {
@@ -30,7 +32,7 @@ const CalculatorComponent = () => {
 
       <div>
 
-        <input type="text" name="a" size="2" value={a} onChange={e=>setA(e.target.value)} />
+        <input type="text" name="a" size="4" value={a} onChange={e=>setA(e.target.value)} />
 
         <select onChange={e=>setOperator(e.target.value)}>
           {operatorItems.map(item => (
@@ -38,11 +40,11 @@ const CalculatorComponent = () => {
           ))}
         </select>
 
-        <input type="text" name="b" size="2" value={b} onChange={e=>setB(e.target.value)} />
+        <input type="text" name="b" size="4" value={b} onChange={e=>setB(e.target.value)} />
 
         <input type="submit" value="=" />
 
-        <input type="text" size="2" readOnly="readOnly" name="b" value={result} />    
+        <input type="text" size="6" readOnly="readOnly" name="b" value={result} />    
 
       </div>
 

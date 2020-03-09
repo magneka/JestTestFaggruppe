@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header" />
+      <div>Faggruppe workshop - kalkulator</div>
         <CalculatorComponent />
     </div>
   );
