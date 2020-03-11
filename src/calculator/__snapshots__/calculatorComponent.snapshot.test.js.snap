@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculatorcomponent snapshot test 1`] = `
+<body>
+  <div>
+    <form>
+      <div>
+        Faggruppe workshop
+      </div>
+      <div>
+        <input
+          data-testid="a"
+          name="a"
+          size="4"
+          type="text"
+          value=""
+        />
+        <select
+          data-testid="operator"
+        >
+          <option
+            value=""
+          />
+          <option
+            value="+"
+          >
+            +
+          </option>
+          <option
+            value="-"
+          >
+            -
+          </option>
+          <option
+            value="/"
+          >
+            /
+          </option>
+          <option
+            value="*"
+          >
+            *
+          </option>
+        </select>
+        <input
+          data-testid="b"
+          name="b"
+          size="4"
+          type="text"
+          value=""
+        />
+        <input
+          data-testid="submit"
+          type="submit"
+          value="="
+        />
+        <input
+          data-testid="result"
+          name="res"
+          readonly=""
+          size="6"
+          type="text"
+          value=""
+        />
+      </div>
+    </form>
+  </div>
+</body>
+`;
