@@ -34,7 +34,7 @@ const CalculatorComponent = () => {
 
         <input type="text" name="a" data-testid="a" size="4" value={a} onChange={e=>setA(e.target.value)} />
 
-        <select onChange={e=>setOperator(e.target.value)}>
+        <select data-testid="operator" onChange={e=>setOperator(e.target.value)}>
           {operatorItems.map(item => (
             <option key={item.value} value={item.value} >{item.label}</option>
           ))}
@@ -44,7 +44,7 @@ const CalculatorComponent = () => {
 
         <input type="submit" value="=" data-testid="submit"/>
 
-        <input type="text" size="6" data-testid="result" readOnly="readOnly" name="res" value={result} />    
+        <input type="text" size="6" data-testid="result" readOnly="readOnly" name="res" value={result} onChange={e=>setResult(e.target.value)} />    
 
       </div>
 
