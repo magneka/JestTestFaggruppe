@@ -30,7 +30,7 @@ const CalculatorComponent = () => {
   return (
     
     <form onSubmit={performCalculation}>
-      <div>Faggruppe workshop</div>
+      
       <div>
 
         <input type="text" name="a" data-testid="a" size="4" value={a} onChange={e=>setA(e.target.value)} />
